@@ -1,0 +1,104 @@
+//  --------- new login -----------
+.mainContentAddProduct {
+    height: 90vh;
+    position: relative;
+
+    .container {
+        background-color: $color-white;
+        padding: 20px;
+        min-width: 280px;
+        width: 100%;
+        max-width: 800px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-primary;
+        border-radius: 10px; //
+        .content-groupLoginwith {
+            position: relative;
+
+            .content-body {
+                top: -60px;
+                position: absolute;
+                width: 100%;
+
+                height: 100px;
+            }
+            h4 {
+                font-size: 1.5em;
+                margin-top: 20px;
+                color: $color-white;
+                text-align: center;
+            }
+            p {
+                margin: 20px 0;
+                text-align: center;
+                color: $color-white;
+            }
+
+            margin: 5px;
+
+            .content-body {
+                @include backgGradient;
+                @include putBorder_shadow;
+                // background-color: ;
+            }
+        }
+        .content-fields {
+            // width: 800px;
+            display: flex;
+            text-align: center;
+            padding-top: 80px;
+            flex-wrap: wrap;
+            .field {
+                flex: 0 0 50%;
+            }
+        }
+    }
+    .field-input,
+    .field-textarea {
+        width: 75%;
+        width: 75%;
+        margin: 5px auto;
+        input {
+            display: block;
+            @include putBorder;
+            border-radius: 0;
+            width: 100%;
+            height: 35px;
+            padding-left: 5px;
+        }
+
+        label {
+            display: block;
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+            height: 75px;
+            padding: 5px;
+            border: 1px solid $color-primary;
+            @include putBorder;
+            border-radius: 0;
+        }
+    }
+}
+
+//
+.detail-shopping {
+    .second-party {
+        text-align: center;
+    }
+    .content-inputs {
+        margin-top: 10%;
+        input {
+            border: 1px solid $color-primary;
+            margin-right: 10px;
+            height: 38px;
+            padding-left: 10px;
+        }
+    }
+}
